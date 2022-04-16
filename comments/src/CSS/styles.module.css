@@ -1,32 +1,234 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    font-size: 24px;
-}
-body{
-    color: white;
-    background: #000;
-    border-radius: 5%;
-}
-h1{
-    margin: 01.5rem 0;
-    font-size: 32px;
-    color: #ffa500;
+    font-size: 20px;
+    font-family: 'Poppins';
+    box-sizing: border-box;
 }
 
-form{
-    margin: 5em auto;
-    width: 40vw;
+.body {
+    color: white;
+    background: #302f2f;
+    border-radius: 2%;
+    max-width: 50vw;
+    margin: 5rem auto;
+    gap: 1rem;
+    height: 70vh;
+    padding: 1rem;
 }
-input{
+
+h1 {
+    margin: 0 0 3rem 0;
+    font-size: 32px;
+    color: #b7870d;
+}
+
+form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    width: 100%;
 }
 
-Input{
+input {
+    border-radius: 8px;
+}
+
+.Input {
     width: 100%;
     padding: 0.4rem;
-    margin: 0.4rem auto;
+    margin: 01rem auto;
     border: none;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.two {
+    width: 50%;
+    display: inline-flex;
+}
+
+label {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.Btn {
+    display: flex;
+    flex-direction: column;
+    background-color: #b7870d;
+    width: 40%;
+    color: white;
+    padding: .5rem;
+    font-size: 20px;
+    margin: 01rem auto;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* LoggedIn Section stylesLoggedInRight */
+
+.Body {
+    display: flex;
+    color: white;
+    background: #302f2f;
+    border-radius: 2%;
+    max-width: 50vw;
+    margin: 5rem auto;
+    gap: 1rem;
+    height: 70vh;
+    padding: 5rem auto;
+}
+
+.LoggedInLeft {
+    position: relative;
+    /* flex: 2; */
+    border-radius: 5%;
+    height: 50vh;
+    color: #fef;
+    opacity: 1;
+    /* border: 1px solid green; */
+    width: 100%;
+    background-color: rgb(29, 28, 27);
+    height: 100%;
+    width: 40%;
+
+}
+
+.LoggedInRight {
+    border-radius: 5%;
+    /* flex: 3; */
+    width: 60%;
+    /* width: 20vw; */
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+
+}
+
+.cardPicture {
+    border-radius: 60px;
+    height: 60px;
+    width: 60px;
+    background-color: darkgreen;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    background: #000;
+    padding: 0.9rem;
+    border-radius: 10px;
+    gap: 1rem;
+    flex: 1;
+}
+
+.display {
+    background: rgb(163, 178, 202);
+    display: flex;
+    font-weight: 700;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 3;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.icon {
+    height: 80%;
+    width: 20%;
+    /* background-color: orange; */
+    flex-direction: column;
+    gap: 5px;
+    justify-content: right;
+    align-items: flex-end;
+    display: flex;
+    padding-top: 10px;
+}
+
+.icon div {
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person {
+    box-sizing: border-box;
+    padding: 0.6rem;
+    /* border: 1px solid orange; */
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 100%;
+    border-radius: 1;
+
+
+}
+
+.person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid gray;
+
+}
+
+.userUx {
+    padding: 1rem;
+    /* border: 1px solid white; */
+    /* height: 40%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 20px;
+    background-color: #554a4a;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+}
+
+.comments {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.userUx p {
+    /* width: 90%; */
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.userUx p:hover {
+    background-color: yellow;
+    color: black;
+    transition: all 0.3s ease
+}
+
+.logout {
+    position: absolute;
+    bottom: 10%;
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
 }
